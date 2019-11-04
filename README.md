@@ -1,4 +1,5 @@
-# forsocket-client [![NPM version](https://img.shields.io/npm/v/vue-websocket.svg)](https://www.npmjs.com/package/vue-websocket)
+# forsocket-client
+ 
 The websocket client base on socketjs and stomp.
 
 
