@@ -16,6 +16,7 @@ class ForSocket {
       topic: '/topic',
       user: '/user/'
     }, options);
+    console.log(this.options);
     this.user = {};
     this.socket = new SocketJS(this.options.url);
     this.stomp = Stomp.over(this.socket);
@@ -49,7 +50,7 @@ class ForSocket {
         }
       });
       // Subscribe server message for user self.
-      _self.stomp.subscribe(_self.options.user + _self.user.header['user-name'] + '/**', function (msg) {
+      _self.stomp.subscribe(_self.options.user + _self.user.headers['user-name'] + '/**', function (msg) {
         if (userSubscribeCallback != null) {
           userSubscribeCallback(JSON.parse(msg));
         }

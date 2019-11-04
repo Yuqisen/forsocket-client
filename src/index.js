@@ -5,8 +5,10 @@ import ForSocket from './ForSocket';
  * @param Vue The Vue Object.
  * @param options Options
  */
-const install = (Vue, options = {}) => {
-	Vue.prototype.$forsocket = new ForSocket(options);
+const install = function(Vue, options = {}) {
+	const forsocket = new ForSocket(options);
+	Vue.forsocket = forsocket;
+	Vue.prototype.$forsocket = forsocket;
 };
 
 if (typeof window !== 'undefined' && window.Vue) {
@@ -14,5 +16,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 
 export default {
-	install
+	install,
+	ForSocket
 };

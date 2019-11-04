@@ -1,11 +1,12 @@
 {
   "name": "forsocket-client",
-  "version": "0.0.2",
+  "version": "0.0.7",
   "description": "Websocket handler for Vue.js",
   "homepage": "https://github.com/Yuqisen/forsocket-client",
-  "main": "dist/forsocket-client.js",
+  "main": "lib/index.js",
   "scripts": {
-    "build": "webpack --mode=production --progress --hide-modules",
+    "clean": "rimraf lib",
+    "build": "npm run clean && webpack --mode=production --progress --hide-modules --config build/webpack.conf.js",
     "lint": "eslint --ext=.js,.vue src test/unit/specs",
     "changelog": "conventional-changelog -i CHANGELOG.md -s",
     "pretest": "npm run lint",
@@ -22,7 +23,7 @@
     "url": "https://github.com/Yuqisen/forsocket-client.git"
   },
   "files": [
-    "dist",
+    "lib",
     "src"
   ],
   "author": "Yuqisen",
@@ -47,6 +48,7 @@
     "net": "^1.0.2"
   },
   "dependencies": {
+    "progress-bar-webpack-plugin": "^1.11.0",
     "sockjs-client": "^1.4.0",
     "stompjs": "^2.3.3"
   }
