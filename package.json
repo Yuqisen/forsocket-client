@@ -1,9 +1,9 @@
 {
   "name": "forsocket-client",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Websocket handler for Vue.js",
   "homepage": "https://github.com/Yuqisen/forsocket-client",
-  "main": "dist/vue-websocket.js",
+  "main": "dist/forsocket-client.js",
   "scripts": {
     "build": "webpack --mode=production --progress --hide-modules",
     "lint": "eslint --ext=.js,.vue src test/unit/specs",
