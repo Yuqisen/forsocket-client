@@ -1,6 +1,6 @@
 {
   "name": "forsocket-client",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Websocket handler for Vue.js",
   "homepage": "https://github.com/Yuqisen/forsocket-client",
   "main": "lib/index.js",
