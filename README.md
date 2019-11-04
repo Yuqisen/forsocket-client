@@ -1,5 +1,4 @@
-# forsocket-client
- 
+# forsocket-client [![NPM version](https://img.shields.io/npm/v/forsocket-client.svg)](https://www.npmjs.com/package/forsocket-client)
 The websocket client base on socketjs and stomp.
 
 
